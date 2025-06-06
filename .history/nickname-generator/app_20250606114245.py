@@ -31,7 +31,7 @@ def clean_nickname(text, prompt):
     nickname = re.sub(r"\d+", "", nickname)            # Remove digits
 
     words = nickname.split()
-    blacklist = {"example", "examples", "this", "nickname", "name", "player", "suggestion", "cool", "generate", "from"}
+    blacklist = {"example", "examples","this", "nickname", "name", "player", "suggestion", "cool", "generate", "from"}
 
     for word in words:
         cleaned = word.strip().capitalize()
